@@ -8,6 +8,8 @@ width = 2;
 
 canvas.addEventListener("mousedown",my_mouse_down);
 function my_mouse_down(e) {
+    color=document.getElementById("color").value;
+    width=document.getElementById("Width_of_line").value;
     mouse_event = "mousedown";
 }
 canvas.addEventListener("mousemove",my_mouse_move);
@@ -38,3 +40,6 @@ function my_mouse_move(e) {
  function my_mouse_leave(e) {
      mouse_event = "mouseleaveśśś";
  }
+function clear_area(){
+    ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
+}
